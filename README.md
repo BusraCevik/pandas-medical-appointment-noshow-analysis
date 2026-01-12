@@ -111,10 +111,11 @@ pandas-medical-appointment-noshow-analysis/
 │   └── index.html   
 │
 ├── src/
-│   ├── data_cleaning.py
+│   ├── data_preparation.py
 │   ├── feature_engineering.py
-│   ├── analysis.py
-│   └── visualization.py
+│   ├── noshow_analysis.py
+│   ├── visualization.py
+│   └── dashboard.py
 │
 ├── notebooks/
 │   └── exploration.ipynb
