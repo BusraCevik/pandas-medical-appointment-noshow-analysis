@@ -1,5 +1,9 @@
 import os
 from src.data_preparation import prepare_data
+from src.feature_engineering import create_featured_dataset
+
+
+
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, 'data')
@@ -25,7 +29,7 @@ VISUALIZATION_PATH = os.path.join(SRC_DIR, "visualization.py")
 
 def main():
     prepare_data(RAW_DATA_PATH, CLEANED_DATA_PATH)
-
+    create_featured_dataset(CLEANED_DATA_PATH,FEATURES_DATA_PATH)
 
 
 
