@@ -20,6 +20,7 @@ def create_featured_dataset(input_path, output_path):
 
     # appointment_weekday
     df["appointment_weekday"] = df["appointmentday"].dt.day_name()
+    df["appointment_weekday_num"] = df["appointmentday"].dt.weekday
 
     # scheduled_weekday
     df["scheduled_weekday"] = df["scheduledday"].dt.day_name()
@@ -29,13 +30,22 @@ def create_featured_dataset(input_path, output_path):
 
     # age_group (pd.cut or np.select)
     bins = [0, 13, 18, 55, np.inf]
-    labels = ["child", "teen", "adult", "senior"]
+    age_labels = ["child", "teen", "adult", "senior"]
 
     df["age_group"] = pd.cut(
         df["age"],
         bins=bins,
-        labels=labels,
+        labels=age_labels,
         include_lowest=True,
+    )
+    buckets = [0, 1, 3, 7, np.inf]
+    bucket_labels = ["0-1 days", "1-3 days", "3-7 days", "7+ days"]
+
+    df["waiting_bucket"] = pd.cut(
+        df["waiting_days"],
+        bins=buckets,
+        labels=bucket_labels,
+        include_lowest=True
     )
 
     # no_show_flag mapping

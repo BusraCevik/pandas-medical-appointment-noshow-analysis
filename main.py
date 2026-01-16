@@ -1,6 +1,7 @@
 import os
 from src.data_preparation import prepare_data
 from src.feature_engineering import create_featured_dataset
+from src.noshow_analysis import noshow_analysis
 
 
 
@@ -8,13 +9,13 @@ from src.feature_engineering import create_featured_dataset
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, 'data')
 DOCS_DIR = os.path.join(BASE_DIR, 'docs')
-OUTPUT_DIR = os.path.join(BASE_DIR, 'outputS')
+OUTPUT_DIR = os.path.join(BASE_DIR, 'outputs')
 SRC_DIR = os.path.join(BASE_DIR, 'src')
 
 
 RAW_DATA_PATH = os.path.join(DATA_DIR, 'raw', "dataset.csv")
 CLEANED_DATA_PATH = os.path.join(DATA_DIR, 'clean', "clean.csv")
-FEATURES_DATA_PATH = os.path.join(DATA_DIR, 'featured',"featured.csv")
+FEATURED_DATA_PATH = os.path.join(DATA_DIR, 'featured',"featured.csv")
 
 CSV_PATH = os.path.join(OUTPUT_DIR, 'csv')
 FIGURES_PATH = os.path.join(OUTPUT_DIR, 'figures')
@@ -29,7 +30,8 @@ VISUALIZATION_PATH = os.path.join(SRC_DIR, "visualization.py")
 
 def main():
     prepare_data(RAW_DATA_PATH, CLEANED_DATA_PATH)
-    create_featured_dataset(CLEANED_DATA_PATH,FEATURES_DATA_PATH)
+    create_featured_dataset(CLEANED_DATA_PATH,FEATURED_DATA_PATH)
+    noshow_analysis(FEATURED_DATA_PATH, CSV_PATH)
 
 
 
