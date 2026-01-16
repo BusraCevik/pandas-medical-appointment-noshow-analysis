@@ -57,6 +57,13 @@ The dataset contains appointment-level records from a public healthcare system.
 
 ### 🧩 No-Show Analysis by Key Factors
 
+### 🍩 Overall Appointment Attendance
+
+- Overall distribution of attended vs missed appointments  
+![](outputs/figures/overall_noshow_donut.png)
+
+---
+
 #### 👥 No-Show Rate by Age Group
 - Comparison of attendance behavior across different age segments  
 ![](outputs/figures/noshow_by_age_group.png)
@@ -69,17 +76,24 @@ The dataset contains appointment-level records from a public healthcare system.
 
 ---
 
-#### ⏳ No-Show Rate by Waiting Time
+#### ⏳ No-Show Rate by Waiting Days
 - Analysis of how delay between scheduling and appointment affects attendance  
 ![](outputs/figures/noshow_by_waitingdays.png)
 
 ---
 
-#### 📅 No-Show Rate by Weekday
+#### 📅 No-Show Rate by Weekdays
 - Identifying which weekdays are associated with higher no-show risk  
 ![](outputs/figures/noshow_by_weekdays.png)
 
 ---
+
+#### 🚻 No-Show Rate by Gender
+- Comparison of no-show behavior between female and male patients  
+![](outputs/figures/noshow_by_gender.png)
+
+---
+
 
 ### 🌐 Interactive Dashboard Preview
 
