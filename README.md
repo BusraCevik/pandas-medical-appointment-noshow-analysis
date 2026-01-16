@@ -59,36 +59,37 @@ The dataset contains appointment-level records from a public healthcare system.
 
 #### 👥 No-Show Rate by Age Group
 - Comparison of attendance behavior across different age segments  
-![](outputs/figures/no_show_by_age_group.png)
+![](outputs/figures/noshow_by_age_group.png)
 
 ---
 
 #### 📩 Impact of SMS Reminders on Attendance
 - No-show rates for patients who received SMS vs those who did not  
-![](outputs/figures/no_show_by_sms.png)
+![](outputs/figures/noshow_by_sms.png)
 
 ---
 
 #### ⏳ No-Show Rate by Waiting Time
 - Analysis of how delay between scheduling and appointment affects attendance  
-![](outputs/figures/no_show_by_waiting_time.png)
+![](outputs/figures/noshow_by_waitingdays.png)
 
 ---
 
 #### 📅 No-Show Rate by Weekday
 - Identifying which weekdays are associated with higher no-show risk  
-![](outputs/figures/no_show_by_weekday.png)
+![](outputs/figures/noshow_by_weekdays.png)
 
 ---
 
 ### 🌐 Interactive Dashboard Preview
 
-- All segment-based churn analyses are available in an interactive dashboard  
+- All segment-based no-show analyses are available in an interactive dashboard  
   with dropdown selection and dynamic KPI updates.
+
 ![](docs/demo.gif)
 
 🖱️ **Live Dashboard:**  
-<a href="https://busracevik.github.io/pandas-medical-appointment-noshow-analysis/index.html" target="_blank">View Interactive Churn Dashboard</a>
+<a href="https://busracevik.github.io/pandas-medical-appointment-noshow-analysis/index.html" target="_blank">View Interactive Dashboard</a>
 
 ---
 
@@ -103,7 +104,7 @@ pandas-medical-appointment-noshow-analysis/
 │   └── featured/
 │
 ├── outputs/
-│   ├──csv/
+│   ├── csv/
 │   └── figures/
 │
 ├── docs/
@@ -116,9 +117,6 @@ pandas-medical-appointment-noshow-analysis/
 │   ├── noshow_analysis.py
 │   ├── visualization.py
 │   └── dashboard.py
-│
-├── notebooks/
-│   └── exploration.ipynb
 │
 ├── main.py
 ├── requirements.txt
