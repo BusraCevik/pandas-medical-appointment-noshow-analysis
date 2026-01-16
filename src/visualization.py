@@ -179,7 +179,7 @@ def _plot_noshow_by_gender(csv_dir, fig_dir):
         df["noshow_rate"],
         color=colors,
         edgecolor=DARK_COLOR,
-        width=0.4
+        width=0.2
     )
 
     plt.title("No-show Rate by Gender", color=DARK_COLOR)
