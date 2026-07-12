@@ -1,4 +1,4 @@
-# 🏥 pandas-medical-appointment-no-show-analysis
+# pandas-medical-appointment-no-show-analysis
 
 A **healthcare analytics project using Pandas**, focused on understanding patient behavior, appointment dynamics, and factors associated with missed medical appointments (no-shows).
 
@@ -10,7 +10,7 @@ using interpretable statistical analysis rather than predictive modeling.
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 Missed medical appointments reduce healthcare efficiency, increase operational costs, and limit access to care for other patients.
 
@@ -31,7 +31,7 @@ The project provides:
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 [**Medical Appointment No Shows Dataset (Kaggle)**](https://www.kaggle.com/datasets/joniarroba/noshowappointments)
 
@@ -55,59 +55,59 @@ The dataset contains appointment-level records from a public healthcare system.
 
 ---
 
-### 🧩 No-Show Analysis by Key Factors
+### No-Show Analysis by Key Factors
 
-### 🍩 Overall Appointment Attendance
+### Overall Appointment Attendance
 
 - Overall distribution of attended vs missed appointments  
 ![](outputs/figures/overall_noshow_donut.png)
 
 ---
 
-#### 👥 No-Show Rate by Age Group
+#### No-Show Rate by Age Group
 - Comparison of attendance behavior across different age segments  
 ![](outputs/figures/noshow_by_age_group.png)
 
 ---
 
-#### 📩 Impact of SMS Reminders on Attendance
+#### Impact of SMS Reminders on Attendance
 - No-show rates for patients who received SMS vs those who did not  
 ![](outputs/figures/noshow_by_sms.png)
 
 ---
 
-#### ⏳ No-Show Rate by Waiting Days
+#### No-Show Rate by Waiting Days
 - Analysis of how delay between scheduling and appointment affects attendance  
 ![](outputs/figures/noshow_by_waitingdays.png)
 
 ---
 
-#### 📅 No-Show Rate by Weekdays
+#### No-Show Rate by Weekdays
 - Identifying which weekdays are associated with higher no-show risk  
 ![](outputs/figures/noshow_by_weekdays.png)
 
 ---
 
-#### 🚻 No-Show Rate by Gender
+#### No-Show Rate by Gender
 - Comparison of no-show behavior between female and male patients  
 ![](outputs/figures/noshow_by_gender.png)
 
 ---
 
 
-### 🌐 Interactive Dashboard Preview
+### Interactive Dashboard Preview
 
 - All segment-based no-show analyses are available in an interactive dashboard  
   with dropdown selection and dynamic KPI updates.
 
 ![](docs/demo.gif)
 
-🖱️ **Live Dashboard:**  
+**Live Dashboard:**  
 <a href="https://busracevik.github.io/pandas-medical-appointment-noshow-analysis/index.html" target="_blank">View Interactive Dashboard</a>
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 pandas-medical-appointment-noshow-analysis/
@@ -139,7 +139,7 @@ pandas-medical-appointment-noshow-analysis/
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - **Python** – Core programming language  
 - **Pandas** – Data cleaning, feature engineering, and aggregation  
@@ -148,7 +148,7 @@ pandas-medical-appointment-noshow-analysis/
 
 ---
 
-## 🧠 Analytical Approach
+## Analytical Approach
 
 This project focuses on **behavioral and operational healthcare analytics** rather than predictive modeling.  
 No machine learning models are applied.
